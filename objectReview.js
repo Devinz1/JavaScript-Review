@@ -43,11 +43,23 @@ var user = {
 
 //Above you're given a user object. Loop through the user object checking to make sure that each value is truthy. If it's not truthy, remove it from the object. hint: 'delete'.
 
-  //Your code here
+  
+  for(var key in user){
+    if(user[key] !== 0){
+     delete user. email;
+     delete user. birthday;
+     delete user. email;
+    }
+  }
 
 //Once you get your truthy array, Change the remaining values in the array to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  //Your code here
+  user.name = 'Devin',
+  user.email = 'devinzohner@gmail.com',
+  user.pwHash = 'winterforever',
+  user.birthday = 'September 12, 1989',
+  user.username = 'dzidaho',
+  user.age = '25',
 
 //Now console.log your object and make sure it looks right.
 
