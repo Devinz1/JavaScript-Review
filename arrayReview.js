@@ -3,6 +3,9 @@ var threeItems = [1,2,3];
 //alert the result of your function
 
   //code here
+var last = function(list){}
+return threeItems[2];
+}
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -12,8 +15,9 @@ var threeItems = [1,2,3];
 var dicedArray = [0,1,4,5,7,8,10];
 
   //code here
-
-
+dicedArray.splice(2, 0, 2, 3);
+dicedArray.splice(6,0,6);
+dicedArray.splice(9,0,9);
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
@@ -21,7 +25,12 @@ var dicedArray = [0,1,4,5,7,8,10];
 //Loop through evenArray removing all values that aren't even 
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
-  //code here
+  for(var i = 0; i < evenArray.length; i++){
+  	if(evenArray[i] % 2 !== 0){
+  		evenArray.splice(i, 1);
+  		i--;
+  	}
+  }
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
