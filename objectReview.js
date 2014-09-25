@@ -45,27 +45,26 @@ var user = {
 
   
   for(var key in user){
-    if(user[key] !== 0){
-     delete user. email;
-     delete user. birthday;
-     delete user. email;
+    if(!user[key]){
+     delete user[key]
+     
     }
   }
 
 //Once you get your truthy array, Change the remaining values in the array to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
-  user.name = 'Devin',
-  user.email = 'devinzohner@gmail.com',
-  user.pwHash = 'winterforever',
-  user.birthday = 'September 12, 1989',
-  user.username = 'dzidaho',
-  user.age = '25',
+  user.name = 'Devin'
+  user.email = 'devinzohner@gmail.com'
+  user.pwHash = 'winterforever'
+  user.birthday = 'September 12, 1989'
+  user.username = 'dzidaho'
+  user.age = '25'
 
 //Now console.log your object and make sure it looks right.
 
   //Your code here
 
-
+console.log(user)
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
@@ -74,10 +73,12 @@ var user = {
 //create an empty object called methodCollection. 
 
   //Your code here
+  var methodCollection = function{}
 
 //Now add two methods (functions that are properties on objects) to your methodCollection object. One called 'alertHello' which alerts 'hello' and another method called logHello which logs 'hello' to the console. 
 
-  //Your code here
+  methodCollection.alertHello = "hello";
+  methodCollection.logHello = 'hello';
 
 //Now call your alertHello and logHello methods. 
 

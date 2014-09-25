@@ -8,7 +8,9 @@ first(names, function(firstName){
 });
 
 
-
+var first = function(array,cb){
+  cb(array[0]);
+}
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
@@ -19,7 +21,10 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 last(names, function(lastName){
   console.log('The last name in names is ', lastName);
 });
-
+ 
+ var last = function(array,cb){
+   cb(array[6]);
+ }
 
 
 
