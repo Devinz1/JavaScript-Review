@@ -43,16 +43,25 @@ var getRandomArbitrary = function() {
 }
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
+
   //code here
-
-
+  var random = function(){
+  	var randomNum = getRandomArbitrary();
+  	var flag = false;
+  	for(var i = 0; i < randomArray.length; i++){
+		if(randomArray[i] === randomNum){
+			flag = true;
+		}
+	}
+	return flag;
+  }
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
 //Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. When you run this, first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] if you created your copy correctly.
 var first = [1,2,3,4,5];
-var second;
+var second = [1,2,3,4,5,6,7];
 
   //code here
 
@@ -69,7 +78,11 @@ alert(second) //[1,2,3,4,5,6,7];
 var sentence = "Dev Mountain is the best"
 
   //code here
+var longest = function(biggest){
+	
 
+
+}
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 

@@ -1,6 +1,6 @@
 //Create a Animal Constructor that has the following parameters. species, name, legs, color, food (which is an array of foods they can eat).
 
-  //code here
+  
 
 
 //Now create a person function that creates an object and returns it (not in constructor form) that has the following parameters. name, age, height, gender
